@@ -2,6 +2,7 @@
 #Import-Module AWS.Tools
 
 # グローバル変数
+#aaa
 $commandInf = @{} 
 $stopkeyword = @(
     "exit",
