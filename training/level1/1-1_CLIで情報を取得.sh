@@ -26,7 +26,7 @@ aws ec2 deregister-image
 aws ec2 describe-snapshots
 
 #スナップショット(RDS)
-aws rds describe-db-snapshots|
+aws rds describe-db-snapshots
 
 
 ######################################################
@@ -43,7 +43,7 @@ aws ec2 describe-security-groups \
 
 #別解（CLIの出力結果をパイプラインでつないで、別のコマンドで成型加工）
 #--queryでやっていることをjqというコマンド使ってやる
-# \ はコマンドを開業するときに使用（一行で各場合は不要）
+# \ はコマンドを改行するときに使用（一行で各場合は不要）
 aws ec2 describe-security-groups  \
 | jq -r ''
 
